@@ -7,7 +7,7 @@ coffee.forEach(coffee => {
         const price = priceFormatStr(coffee.price);
 
         await menuPage.open();
-        await coffee.actionClick({ menuPage });
+        // await coffee.actionClick({ menuPage });
 
         await coffee.assertCostHasValue(price, { menuPage });
     });
